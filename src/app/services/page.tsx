@@ -1,11 +1,33 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Check, Zap, Rocket, Shield, ArrowRight } from "lucide-react";
+import type { Metadata } from "next";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Services | OptiNext Studio",
-  description:
-    "Fast, SEO-optimized Next.js websites & MVPs that actually convert. Built in Bulgaria.",
+  description: "Fast, SEO-optimized Next.js websites & MVPs that actually convert. Built in Bulgaria.",
+  openGraph: {
+    title: "Services | OptiNext Studio",
+    description: "Fast, SEO-optimized Next.js websites & MVPs that actually convert. Built in Bulgaria.",
+    url: "https://optinext-studio.vercel.app/services",
+    siteName: "OptiNext Studio",
+    images: [
+      {
+        url: "/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "OptiNext Studio Services",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Services | OptiNext Studio",
+    description: "Fast, SEO-optimized Next.js websites & MVPs that actually convert. Built in Bulgaria.",
+    images: ["/logo.png"],
+  },
 };
 
 const services = [

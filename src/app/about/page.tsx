@@ -1,9 +1,32 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import type { Metadata } from "next";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "About - OptiNext Studio",
   description: "Learn about OptiNext Studio - Fast, SEO-optimized Next.js websites & MVPs that actually convert. Built in Bulgaria.",
+  openGraph: {
+    title: "About - OptiNext Studio",
+    description: "Learn about OptiNext Studio - Fast, SEO-optimized Next.js websites & MVPs that actually convert. Built in Bulgaria.",
+    url: "https://optinext-studio.vercel.app/about",
+    siteName: "OptiNext Studio",
+    images: [
+      {
+        url: "/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "About OptiNext Studio",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About - OptiNext Studio",
+    description: "Learn about OptiNext Studio - Fast, SEO-optimized Next.js websites & MVPs that actually convert. Built in Bulgaria.",
+    images: ["/logo.png"],
+  },
 };
 
 export default function AboutPage() {

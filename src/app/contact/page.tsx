@@ -1,10 +1,33 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ContactForm from "@/components/ContactForm";
+import type { Metadata } from "next";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Contact - OptiNext Studio",
   description: "Get in touch with OptiNext Studio for your Next.js project. Book a free 30-min strategy call.",
+  openGraph: {
+    title: "Contact - OptiNext Studio",
+    description: "Get in touch with OptiNext Studio for your Next.js project. Book a free 30-min strategy call.",
+    url: "https://optinext-studio.vercel.app/contact",
+    siteName: "OptiNext Studio",
+    images: [
+      {
+        url: "/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Contact OptiNext Studio",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact - OptiNext Studio",
+    description: "Get in touch with OptiNext Studio for your Next.js project. Book a free 30-min strategy call.",
+    images: ["/logo.png"],
+  },
 };
 
 export default function ContactPage() {

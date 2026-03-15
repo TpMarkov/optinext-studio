@@ -2,10 +2,33 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import type { Metadata } from "next";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Blog - OptiNext Studio",
   description: "Insights on Next.js development, performance optimization, and web development trends from OptiNext Studio.",
+  openGraph: {
+    title: "Blog - OptiNext Studio",
+    description: "Insights on Next.js development, performance optimization, and web development trends from OptiNext Studio.",
+    url: "https://optinext-studio.vercel.app/blog",
+    siteName: "OptiNext Studio",
+    images: [
+      {
+        url: "/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "OptiNext Studio Blog",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Blog - OptiNext Studio",
+    description: "Insights on Next.js development, performance optimization, and web development trends from OptiNext Studio.",
+    images: ["/logo.png"],
+  },
 };
 
 export default function BlogPage() {
