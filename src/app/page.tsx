@@ -3,7 +3,14 @@ import Hero from "@/components/Hero";
 import Footer from "@/components/Footer";
 import Testimonials from "@/components/Testimonials";
 import Link from "next/link";
-import { ArrowRight, Zap, Rocket, Shield } from "lucide-react";
+import dynamic from 'next/dynamic';
+import { Rocket, Shield, Zap } from "lucide-react";
+
+// Dynamic import for Calendly to avoid SSR issues
+const CalendlyEmbed = dynamic(() => import('@/components/CalendlyEmbed'), { 
+  ssr: false,
+  loading: () => <div className="h-[500px] bg-white rounded-2xl animate-pulse" />
+});
 
 export default function Home() {
   return (
@@ -289,15 +296,7 @@ export default function Home() {
                 Book a Free 30-min Strategy Call
               </h3>
               <div className="bg-white rounded-2xl overflow-hidden shadow-xl">
-                <div
-                  className="calendly-inline-widget"
-                  data-url="https://calendly.com/optinext/30min"
-                  style={{ minWidth: "320px", height: "500px" }}
-                />
-                <script
-                  src="https://assets.calendly.com/assets/external/widget.js"
-                  async
-                />
+                <CalendlyEmbed />
               </div>
             </div>
           </div>
