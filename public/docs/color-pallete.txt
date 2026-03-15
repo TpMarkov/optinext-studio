@@ -1,0 +1,62 @@
+Primary Colour
+
+Deep Navy: #0A2540
+Usage:
+
+Main backgrounds (sections, hero)
+
+Header/footer bars
+
+Primary text on light backgrounds (sparingly)
+
+Accent Colour
+
+Electric Cyan: #00F5FF
+Usage:
+
+Links, interactive hover states
+
+Icons or small highlights
+
+Call-to-action highlights on dark backgrounds
+
+Neutral Palette
+
+Soft Gray: #F8F9FA
+Usage:
+
+Page backgrounds (content sections)
+
+Cards, modals, and panels
+
+Secondary text or subtle borders
+
+Dark Text: #111827
+Usage:
+
+Main text on light backgrounds
+
+Headings, paragraphs
+
+Footer and secondary navigation
+
+Success / CTA Colour
+
+Bright Green: #22C55E
+Usage:
+
+Primary call-to-action buttons (e.g., “Get Started”, “Contact Us”)
+
+Success messages, notifications, or confirmations
+
+Icons for positive feedback
+
+Suggested Usage Example (for a web page)
+Element	Colour
+Page background	Soft Gray #F8F9FA
+Header/footer background	Deep Navy #0A2540
+Main headings	Dark Text #111827
+Paragraph text	Dark Text #111827
+Links / hover highlights	Electric Cyan #00F5FF
+Primary CTA button	Bright Green #22C55E on Deep Navy #0A2540 background
+Secondary buttons	Deep Navy #0A2540 on Soft Gray #F8F9FA background
