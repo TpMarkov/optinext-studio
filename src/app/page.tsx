@@ -123,6 +123,94 @@ export default function Home() {
 
       <Testimonials />
 
+      {/* Portfolio Section */}
+      <section id="portfolio" className="py-20 bg-navy">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="font-heading text-4xl font-bold text-white mb-4">
+              Our Recent Work
+            </h2>
+            <p className="text-white/70 text-lg max-w-2xl mx-auto">
+              Fast, SEO-optimized Next.js websites & MVPs that actually convert.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Card 1: Dental SaaS Platform */}
+            <div className="bg-navy rounded-2xl p-8 border border-white/10 hover:border-cyan/50 transition-all duration-300">
+              <h3 className="font-heading text-2xl font-semibold text-white mb-3">
+                Dental SaaS Platform
+              </h3>
+              <p className="text-white/70 mb-4">Performance optimisation + Stripe integration</p>
+              <p className="text-green font-semibold text-lg mb-6">+340% faster load time</p>
+              <div className="flex flex-wrap gap-2 mb-6">
+                <span className="px-3 py-1 bg-cyan/10 text-cyan rounded-full text-sm font-medium">Next.js</span>
+                <span className="px-3 py-1 bg-cyan/10 text-cyan rounded-full text-sm font-medium">TypeScript</span>
+                <span className="px-3 py-1 bg-cyan/10 text-cyan rounded-full text-sm font-medium">Tailwind</span>
+                <span className="px-3 py-1 bg-cyan/10 text-cyan rounded-full text-sm font-medium">Stripe</span>
+              </div>
+              <button className="border-2 border-cyan text-cyan px-6 py-3 rounded-lg font-semibold hover:bg-cyan hover:text-navy transition-all duration-200">
+                View Case Study
+              </button>
+            </div>
+
+            {/* Card 2: Travel Booking Web App */}
+            <div className="bg-navy rounded-2xl p-8 border border-white/10 hover:border-cyan/50 transition-all duration-300">
+              <h3 className="font-heading text-2xl font-semibold text-white mb-3">
+                Travel Booking Web App
+              </h3>
+              <p className="text-white/70 mb-4">SEO + SSR</p>
+              <p className="text-green font-semibold text-lg mb-6">+280% organic traffic</p>
+              <div className="flex flex-wrap gap-2 mb-6">
+                <span className="px-3 py-1 bg-cyan/10 text-cyan rounded-full text-sm font-medium">Next.js</span>
+                <span className="px-3 py-1 bg-cyan/10 text-cyan rounded-full text-sm font-medium">TypeScript</span>
+                <span className="px-3 py-1 bg-cyan/10 text-cyan rounded-full text-sm font-medium">Tailwind</span>
+                <span className="px-3 py-1 bg-cyan/10 text-cyan rounded-full text-sm font-medium">SSR</span>
+              </div>
+              <button className="border-2 border-cyan text-cyan px-6 py-3 rounded-lg font-semibold hover:bg-cyan hover:text-navy transition-all duration-200">
+                View Case Study
+              </button>
+            </div>
+
+            {/* Card 3: E-commerce MVP */}
+            <div className="bg-navy rounded-2xl p-8 border border-white/10 hover:border-cyan/50 transition-all duration-300">
+              <h3 className="font-heading text-2xl font-semibold text-white mb-3">
+                E-commerce MVP
+              </h3>
+              <p className="text-white/70 mb-4">Conversion-focused</p>
+              <p className="text-green font-semibold text-lg mb-6">+65% sales</p>
+              <div className="flex flex-wrap gap-2 mb-6">
+                <span className="px-3 py-1 bg-cyan/10 text-cyan rounded-full text-sm font-medium">Next.js</span>
+                <span className="px-3 py-1 bg-cyan/10 text-cyan rounded-full text-sm font-medium">TypeScript</span>
+                <span className="px-3 py-1 bg-cyan/10 text-cyan rounded-full text-sm font-medium">Tailwind</span>
+                <span className="px-3 py-1 bg-cyan/10 text-cyan rounded-full text-sm font-medium">E-commerce</span>
+              </div>
+              <button className="border-2 border-cyan text-cyan px-6 py-3 rounded-lg font-semibold hover:bg-cyan hover:text-navy transition-all duration-200">
+                View Case Study
+              </button>
+            </div>
+
+            {/* Card 4: AI Productivity Tool */}
+            <div className="bg-navy rounded-2xl p-8 border border-white/10 hover:border-cyan/50 transition-all duration-300">
+              <h3 className="font-heading text-2xl font-semibold text-white mb-3">
+                AI Productivity Tool
+              </h3>
+              <p className="text-white/70 mb-4">Next.js 15 + OpenAI integration</p>
+              <p className="text-green font-semibold text-lg mb-6">MVP in 4 weeks</p>
+              <div className="flex flex-wrap gap-2 mb-6">
+                <span className="px-3 py-1 bg-cyan/10 text-cyan rounded-full text-sm font-medium">Next.js 15</span>
+                <span className="px-3 py-1 bg-cyan/10 text-cyan rounded-full text-sm font-medium">TypeScript</span>
+                <span className="px-3 py-1 bg-cyan/10 text-cyan rounded-full text-sm font-medium">Tailwind</span>
+                <span className="px-3 py-1 bg-cyan/10 text-cyan rounded-full text-sm font-medium">OpenAI</span>
+              </div>
+              <button className="border-2 border-cyan text-cyan px-6 py-3 rounded-lg font-semibold hover:bg-cyan hover:text-navy transition-all duration-200">
+                View Case Study
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Contact Section */}
       <section id="contact" className="py-20 bg-navy">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

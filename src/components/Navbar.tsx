@@ -10,9 +10,9 @@ export default function Navbar() {
 
   const navLinks = [
     { href: "/services", label: "Services" },
-    { href: "#portfolio", label: "Portfolio" },
-    { href: "#about", label: "About" },
-    { href: "#contact", label: "Contact" },
+    { href: "/#portfolio", label: "Portfolio" },
+    { href: "/about", label: "About" },
+    { href: "/contact", label: "Contact" },
   ];
 
   return (
@@ -49,7 +49,7 @@ export default function Navbar() {
           {/* CTA Button */}
           <div className="hidden md:block">
             <Link
-              href="#contact"
+              href="/contact"
               className="bg-green text-white px-5 py-2.5 rounded-lg font-semibold text-sm hover:bg-green/90 transition-all duration-200 hover:shadow-lg"
             >
               Get Free Audit
@@ -82,7 +82,7 @@ export default function Navbar() {
               </Link>
             ))}
             <Link
-              href="#contact"
+              href="/contact"
               className="block bg-green text-white px-5 py-3 rounded-lg font-semibold text-center hover:bg-green/90 transition-all duration-200"
               onClick={() => setIsOpen(false)}
             >
