@@ -5,21 +5,24 @@ import { Quote } from "lucide-react";
 const testimonials = [
   {
     quote:
-      "OptiNext Studio delivered our MVP in 3 weeks. The performance is incredible.",
-    author: "Tech Startup Founder",
-    company: "TechFlow",
+      "The Next.js MVP we got from OptiNext Studio loaded in under 1s and doubled our conversions!",
+    author: "Sarah K.",
+    role: "Startup Founder",
+    location: "EU",
   },
   {
     quote:
-      "Our site went from 45 to 98 on Lighthouse. Game changer for our business.",
-    author: "E-commerce Owner",
-    company: "ShopWise",
+      "Best performance & SEO results we ever had. Delivered exactly on time.",
+    author: "Michael T.",
+    role: "SaaS CEO",
+    location: "USA",
   },
   {
     quote:
-      "Best Next.js developer we've worked with. Communication was seamless.",
-    author: "SaaS Founder",
-    company: "DataPulse",
+      "Professional, fast, and built in Bulgaria – perfect partner for our growth.",
+    author: "Elena P.",
+    role: "Bulgarian e-commerce",
+    location: "Bulgaria",
   },
 ];
 
@@ -70,7 +73,7 @@ export default function Testimonials() {
                 <div>
                   <p className="font-semibold text-navy">{testimonial.author}</p>
                   <span className="text-sm text-green font-medium">
-                    {testimonial.company}
+                    {testimonial.role} ({testimonial.location})
                   </span>
                 </div>
               </div>

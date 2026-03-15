@@ -12,7 +12,7 @@ export default function Home() {
       <Hero />
       
       {/* Services Section */}
-      <section id="services" className="py-20 bg-white">
+      <section id="services" className="py-20 bg-gray">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="font-heading text-4xl font-bold text-navy mb-4">
@@ -24,71 +24,99 @@ export default function Home() {
           </div>
           
           <div className="grid md:grid-cols-3 gap-8 mb-12">
-            <div className="p-8 bg-gray rounded-2xl hover:shadow-xl transition-shadow duration-300">
+            {/* Starter Card */}
+            <div className="p-8 bg-navy rounded-2xl hover:shadow-xl transition-shadow duration-300">
               <div className="w-14 h-14 bg-cyan/10 rounded-xl flex items-center justify-center mb-6">
                 <Zap className="w-7 h-7 text-cyan" />
               </div>
-              <h3 className="font-heading text-xl font-semibold text-navy mb-4">
+              <h3 className="font-heading text-xl font-semibold text-white mb-4">
                 Starter – Performance Landing Page
               </h3>
-              <p className="text-text/70 mb-4">
-                High-performance landing page with 95+ Lighthouse score.
-              </p>
-              <p className="font-bold text-green text-lg mb-4">€1,800 – €2,800</p>
+              <ul className="text-white/70 mb-6 space-y-2">
+                <li className="flex items-start gap-2">
+                  <span className="text-cyan">•</span> Next.js + Tailwind
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-cyan">•</span> 95+ Lighthouse score
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-cyan">•</span> Basic SEO + analytics
+                </li>
+              </ul>
+              <p className="font-bold text-green text-lg mb-2">€1,800 – €2,800</p>
+              <p className="text-white/60 text-sm mb-4">7–10 days</p>
               <Link 
-                href="/services" 
-                className="inline-flex items-center text-cyan hover:text-cyan/80 font-medium"
+                href="/contact" 
+                className="inline-block w-full text-center bg-green text-white px-6 py-3 rounded-lg font-semibold hover:bg-green/90 transition-all duration-200"
               >
-                Learn more <ArrowRight className="w-4 h-4 ml-1" />
+                Get Started
               </Link>
             </div>
             
-            <div className="p-8 bg-gray rounded-2xl hover:shadow-xl transition-shadow duration-300">
-              <div className="w-14 h-14 bg-green/10 rounded-xl flex items-center justify-center mb-6">
-                <Rocket className="w-7 h-7 text-green" />
+            {/* Growth Card */}
+            <div className="p-8 bg-navy rounded-2xl hover:shadow-xl transition-shadow duration-300">
+              <div className="w-14 h-14 bg-cyan/10 rounded-xl flex items-center justify-center mb-6">
+                <Rocket className="w-7 h-7 text-cyan" />
               </div>
-              <h3 className="font-heading text-xl font-semibold text-navy mb-4">
+              <h3 className="font-heading text-xl font-semibold text-white mb-4">
                 Growth – Business Website
               </h3>
-              <p className="text-text/70 mb-4">
-                Multi-page website with CMS integration.
-              </p>
-              <p className="font-bold text-green text-lg mb-4">€3,500 – €6,500</p>
+              <ul className="text-white/70 mb-6 space-y-2">
+                <li className="flex items-start gap-2">
+                  <span className="text-cyan">•</span> Multi-page structure
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-cyan">•</span> CMS integration
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-cyan">•</span> Advanced SEO
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-cyan">•</span> Performance tuning
+                </li>
+              </ul>
+              <p className="font-bold text-green text-lg mb-2">€3,500 – €6,500</p>
+              <p className="text-white/60 text-sm mb-4">2–3 weeks</p>
               <Link 
-                href="/services" 
-                className="inline-flex items-center text-cyan hover:text-cyan/80 font-medium"
+                href="/contact" 
+                className="inline-block w-full text-center bg-green text-white px-6 py-3 rounded-lg font-semibold hover:bg-green/90 transition-all duration-200"
               >
-                Learn more <ArrowRight className="w-4 h-4 ml-1" />
+                Get Started
               </Link>
             </div>
             
-            <div className="p-8 bg-gray rounded-2xl hover:shadow-xl transition-shadow duration-300">
-              <div className="w-14 h-14 bg-navy/10 rounded-xl flex items-center justify-center mb-6">
-                <Shield className="w-7 h-7 text-navy" />
+            {/* Enterprise Card */}
+            <div className="p-8 bg-navy rounded-2xl hover:shadow-xl transition-shadow duration-300">
+              <div className="w-14 h-14 bg-cyan/10 rounded-xl flex items-center justify-center mb-6">
+                <Shield className="w-7 h-7 text-cyan" />
               </div>
-              <h3 className="font-heading text-xl font-semibold text-navy mb-4">
-                Enterprise – SaaS MVP
+              <h3 className="font-heading text-xl font-semibold text-white mb-4">
+                Enterprise – SaaS MVP Frontend
               </h3>
-              <p className="text-text/70 mb-4">
-                Full-featured SaaS MVP with auth and dashboards.
-              </p>
-              <p className="font-bold text-green text-lg mb-4">€7,500 – €14,000</p>
+              <ul className="text-white/70 mb-6 space-y-2">
+                <li className="flex items-start gap-2">
+                  <span className="text-cyan">•</span> Authentication
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-cyan">•</span> Dashboard
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-cyan">•</span> API integrations
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-cyan">•</span> Optimisation
+                </li>
+              </ul>
+              <p className="font-bold text-green text-lg mb-2">€7,500 – €14,000</p>
+              <p className="text-white/60 text-sm mb-2">4–6 weeks</p>
+              <p className="text-cyan text-sm mb-4">Monthly Performance Retainer €350/month</p>
               <Link 
-                href="/services" 
-                className="inline-flex items-center text-cyan hover:text-cyan/80 font-medium"
+                href="/contact" 
+                className="inline-block w-full text-center bg-green text-white px-6 py-3 rounded-lg font-semibold hover:bg-green/90 transition-all duration-200"
               >
-                Learn more <ArrowRight className="w-4 h-4 ml-1" />
+                Get Started
               </Link>
             </div>
-          </div>
-          
-          <div className="text-center">
-            <Link 
-              href="/services" 
-              className="inline-flex items-center bg-navy text-white px-8 py-4 rounded-lg font-semibold hover:bg-navy/90 transition-all duration-200 hover:shadow-xl"
-            >
-              View All Services <ArrowRight className="w-5 h-5 ml-2" />
-            </Link>
           </div>
         </div>
       </section>
