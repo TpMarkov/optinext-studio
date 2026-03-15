@@ -18,7 +18,7 @@ export default function Hero() {
             <h1 className="font-heading text-5xl md:text-6xl lg:text-7xl font-bold text-navy leading-tight">
               Fast, SEO-optimized{" "}
               <span className="gradient-text">Next.js websites</span>{" "}
-              that actually convert.
+              & MVPs that actually convert.
             </h1>
 
             <p className="text-xl text-text/70 max-w-xl">

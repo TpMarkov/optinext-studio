@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
@@ -20,9 +21,13 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-navy rounded-lg flex items-center justify-center">
-              <span className="text-cyan font-bold text-xl">N</span>
-            </div>
+            <Image
+              src="/logo.png"
+              alt="OptiNext Studio Logo"
+              width={40}
+              height={40}
+              className="rounded-lg"
+            />
             <span className="font-heading font-bold text-xl text-navy">
               OptiNext<span className="text-cyan">Studio</span>
             </span>
