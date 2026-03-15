@@ -24,6 +24,11 @@
   --font-body: var(--font-inter);
 }
 
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0A2540;
